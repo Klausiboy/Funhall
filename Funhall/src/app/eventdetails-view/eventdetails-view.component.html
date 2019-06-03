@@ -1,0 +1,42 @@
+<p class="compTitle">Event:</p>
+<div>
+  <p>Event navn: </p>
+  <input type="text" value={{name}}>
+</div>
+<div class="dropdown">
+  <p>type: </p>
+  <button class="dropbtn">{{eventType}}</button>
+  <div class="dropdown-content">
+    <button>tempType 1</button>
+    <button>tempType 2</button>
+    <button>tempType 3</button>
+  </div>
+</div>
+<div>
+  <p>Antal gæster: </p>
+  <input type="number" value={{guests}}>
+</div>
+<div>
+  <p>Antal hold: </p>
+  <input type="number" value={{teams}}>
+</div>
+<div>
+  <p>Dato: </p>
+  <input type="date" value={{dateAsString}}>
+</div>
+<div>
+  <p>Start tid:</p>
+  <input type="time" value={{timeStartAsString}}>
+</div>
+<div>
+  <p>slut tid:</p>
+  <input type="time" value={{timeEndAsString}}>
+</div>
+<div>
+  <p>Aktiviteter:</p>
+  <ul>
+    <li *ngFor="let acti of activities">
+      <button><a [routerLink]="[ '/activity_schedule/',acti,name ]">{{acti}}</a></button>
+    </li>
+  </ul>
+</div>

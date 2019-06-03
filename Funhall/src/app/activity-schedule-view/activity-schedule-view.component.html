@@ -1,0 +1,8 @@
+<p>
+  {{title}}
+</p>
+<ul>
+  <li *ngFor="let match of matches">
+    <button> <a [routerLink]="[ '/activity_manager/',match.id ]"><p>test {{match.team1}}, {{match.time}}, {{match.team2}}</p></a></button>
+  </li>
+</ul>

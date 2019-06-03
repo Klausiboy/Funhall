@@ -1,0 +1,9 @@
+<p class="compTitle">{{title}}:</p>
+
+<ul>
+  <li *ngFor="let d of data">
+    <button type="button"><a [routerLink]="[ 'event/',d.name ]">{{d.name}}</a></button>
+    <p>{{d.eventType}}</p>
+    <p>{{d.date}} {{d.startingTime}}</p>
+  </li>
+</ul>

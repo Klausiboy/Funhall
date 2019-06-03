@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.compTitle 
+{
+    font-size: 40px;
+    text-decoration: underline;
+    position: relative;
+    left: 5%;
+}
